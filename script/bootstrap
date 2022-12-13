@@ -1,3 +1,4 @@
 #! /bin/bash
-# This script is used to build the project.
+# This script is used to install and build the project.
+npm install
 npm run build

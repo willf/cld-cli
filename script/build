@@ -1,0 +1,3 @@
+#! /bin/bash
+# This script is used to build the project.
+npm run build
