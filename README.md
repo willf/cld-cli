@@ -1,6 +1,12 @@
 # cld-cli
 
-A CLI for the Compact Language Detector
+A CLI for the [Compact Language Detector](https://github.com/google/cld3)
+
+CLD3 is a statistical language identification library that is able to identify many languages with high accuracy.
+
+## Requirements
+
+- [NPM](https://www.npmjs.com/get-npm)
 
 ## Installation
 
