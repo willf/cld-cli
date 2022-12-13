@@ -16,6 +16,8 @@ script/bootstrap
 
 ## Usage
 
+Note: The `cld-cli` command is aliased to `script/cld-cli` for convenience. It has to be run from this directory.
+
 ```bash
 script/cld-cli --help
 Usage: cld-cli cat <text> | cld-cli [global options]
