@@ -16,7 +16,11 @@ interface CldResult {
 
 const main = async (options: OptionValues ) => {
   const factory = await loadModule();
-  const identifier = factory.create(0, 10000);
+  const minString = options.min
+  const maxString = options.max
+  const min = parseInt(minString)
+  const max = parseInt(maxString)
+  const identifier = factory.create(min, max)
   const reader = readline.createInterface({
     input: stdin,
     output: stdout,
@@ -48,8 +52,11 @@ program
   .option('--no-proportion', 'Remove proportion')
   .option('--no-reliable', 'Remove reliable')
   .option('--no-probability', 'Remove probability')
+  .option('--min <n>', 'Minimum number of bytes', '0')
+  .option('--max <n>', 'Maximum number of bytes', '1000')
   .parse(process.argv);
 
 const options = program.opts();
+
 
 main(options);
